@@ -1,0 +1,49 @@
+Running "module reset". Resetting modules to system default. The following $MODULEPATH directories have been removed: None
+      :-) GROMACS - gmx mdrun, 2026.3-dev-20260625-1210900145-unknown (-:
+
+Executable:   /lfs1i3/home/b36ay/nobl3.b36ay/assignment_3/gromacs/run-baseline/../build/bin/gmx_mpi
+Data prefix:  /home/b36ay/nobl3.b36ay/assignment_3/gromacs/source (source tree)
+Working dir:  /lfs1i3/home/b36ay/nobl3.b36ay/assignment_3/gromacs/run-baseline
+Command line:
+  gmx_mpi mdrun -s ../benchmark/benchMEM.tpr -deffnm benchMEM-5707549 -ntomp 2
+
+There are multiple SIMD instruction sets that are supported by all nodes but
+the best cannot be determined. Check the install guide SIMD Support section
+for recommendations for your particular case.
+SIMD instructions selected at compile time: ARM_NEON_ASIMD
+Reading file ../benchmark/benchMEM.tpr, VERSION 4.6.3-dev-20130701-6e3ae9e (single precision)
+Note: file tpx version 83, software tpx version 138
+Changing nstlist from 10 to 80, rlist from 1 to 1.109
+
+Update groups can not be used for this system because there are three or more consecutively coupled constraints
+
+Using 144 MPI processes
+Using 2 OpenMP threads per MPI process
+
+starting mdrun 'Great Red Oystrich Makes All Chemists Sane'
+10000 steps,     20.0 ps.
+
+Writing final coordinates.
+
+
+Dynamic load balancing report:
+ DLB was turned on during the run due to measured imbalance.
+ Average load imbalance: 6.3%.
+ The balanceable part of the MD step is 56%, load imbalance is computed from this.
+ Part of the total run time spent waiting due to load imbalance: 3.5%.
+ Steps where the load balancing was limited by -rdd, -rcon and/or -dds: X 0 % Y 0 % Z 0 %
+ Average PME mesh/force load: 1.282
+ Part of the total run time spent waiting due to PP/PME imbalance: 12.7 %
+
+NOTE: 12.7 % performance was lost because the PME ranks
+      had more work to do than the PP ranks.
+      You might want to increase the number of PME ranks
+      or increase the cut-off and the grid spacing.
+
+
+               Core t (s)   Wall t (s)        (%)
+       Time:     1855.426        6.443    28798.0
+                 (ns/day)    (hour/ns)    (ms/step)  (Matom*steps/s) 
+Performance:      268.229        0.089        0.644          126.886 
+
+GROMACS reminds you: "Just Because the Sun Wants a Place In the Sky" (F. Zappa)
