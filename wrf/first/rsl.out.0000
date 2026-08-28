@@ -1,0 +1,692 @@
+taskid: 0 hostname: x3007c0s7b1n0
+Quilting with   1 groups of   0 I/O tasks.
+ Ntasks in X           12 , ntasks in Y           12
+*************************************
+Configuring physics suite 'conus'
+
+         mp_physics:      8
+         cu_physics:      6
+      ra_lw_physics:      4
+      ra_sw_physics:      4
+     bl_pbl_physics:      2
+  sf_sfclay_physics:      2
+ sf_surface_physics:      2
+*************************************
+Domain # 1: dx = 12000.000 m
+WRF V4.8.0 MODEL
+git commit 06d4240ae989cc3e50af412bb472df3d9048783c 1 file changed, 856 deletions(-)
+ *************************************
+ Parent domain
+ ids,ide,jds,jde            1         425           1         300
+ ims,ime,jms,jme           -4          43          -4          32
+ ips,ipe,jps,jpe            1          36           1          25
+ *************************************
+DYNAMICS OPTION: Eulerian Mass Coordinate
+ alloc_space_field: domain            1 ,              71114800  bytes allocated
+med_initialdata_input: calling input_input
+ Input data is acceptable to use: wrfinput_d01
+ CURRENT DATE          = 2019-11-26_12:00:00
+ SIMULATION START DATE = 2019-11-26_12:00:00
+Timing for processing wrfinput file (stream 0) for domain        1:    1.53992 elapsed seconds
+Max map factor in domain 1 =  1.05. Scale the dt in the model accordingly.
+ D01: Time step                              =    72.0000000      (s)
+ D01: Grid Distance                          =    12.0000000      (km)
+ D01: Grid Distance Ratio dt/dx              =    6.00000000      (s/km)
+ D01: Ratio Including Maximum Map Factor     =    6.32187796      (s/km)
+ D01: NML defined reasonable_time_step_ratio =    6.00000000
+ Climate GHG input from file from year         1765  to         2499
+ CO2   range =    277.91300000000001        579.26400000000001       ppm
+ N2O   range =    274.37200000000001        359.79800000000000       ppb
+ CH4   range =    738.98599999999999        997.31100000000004       ppb
+ CFC11 range =    0.0000000000000000        1.4000000000000000E-002  ppt
+ CFC12 range =    0.0000000000000000        2.8809999999999998       ppt
+ Normal ending of CAMtr_volume_mixing_ratio file
+ GHG annual values from CAM trace gas file
+ Year =         2019 , Julian day =          330
+ CO2   =    4.1280616288937283E-004  volume mixing ratio
+ N2O   =    3.3164731848847696E-007  volume mixing ratio
+ CH4   =    1.9046224215321381E-006  volume mixing ratio
+ CFC11 =    2.1972312207550427E-010  volume mixing ratio
+ CFC12 =    4.9756474391800364E-010  volume mixing ratio
+INPUT LandUse = "MODIFIED_IGBP_MODIS_NOAH"
+ LANDUSE TYPE = "MODIFIED_IGBP_MODIS_NOAH" FOUND          61  CATEGORIES           2  SEASONS WATER CATEGORY =           17  SNOW CATEGORY =           15
+INITIALIZE THREE Noah LSM RELATED TABLES
+Skipping over LUTYPE = USGS
+ LANDUSE TYPE = MODIFIED_IGBP_MODIS_NOAH FOUND          20  CATEGORIES
+ INPUT SOIL TEXTURE CLASSIFICATION = STAS
+ SOIL TEXTURE CLASSIFICATION = STAS FOUND          19  CATEGORIES
+ThompMP: computing qr_acr_qg table: qr_acr_qg_V4.dat
+Timing for table computation qr_acr_qg_V4.dat:    1.97668 elapsed seconds
+Writing qr_acr_qg_V4.dat     in Thompson MP init
+ThompMP: read qr_acr_qsV2.dat instead of computing
+ThompMP: read freezeH2O.dat instead of computing
+Timing for Writing wrfout_d01_2019-11-26_12:00:00 for domain        1:    1.31241 elapsed seconds
+ Input data is acceptable to use: wrfbdy_d01
+Timing for processing lateral boundary for domain        1:    0.81109 elapsed seconds
+WRF NUMBER OF TILES FROM OMP_GET_MAX_THREADS =   4
+ Tile Strategy is not specified. Assuming 1D-Y
+WRF TILE   1 IS      1 IE     36 JS      1 JE      7
+WRF TILE   2 IS      1 IE     36 JS      8 JE     13
+WRF TILE   3 IS      1 IE     36 JS     14 JE     19
+WRF TILE   4 IS      1 IE     36 JS     20 JE     25
+WRF NUMBER OF TILES =   4
+Timing for main: time 2019-11-26_12:01:12 on domain   1:    2.35843 elapsed seconds
+Timing for main: time 2019-11-26_12:02:24 on domain   1:    0.04539 elapsed seconds
+Timing for main: time 2019-11-26_12:03:36 on domain   1:    0.04907 elapsed seconds
+Timing for main: time 2019-11-26_12:04:48 on domain   1:    0.04693 elapsed seconds
+Timing for main: time 2019-11-26_12:06:00 on domain   1:    0.04895 elapsed seconds
+Timing for main: time 2019-11-26_12:07:12 on domain   1:    0.04558 elapsed seconds
+Timing for main: time 2019-11-26_12:08:24 on domain   1:    0.04546 elapsed seconds
+Timing for main: time 2019-11-26_12:09:36 on domain   1:    0.04872 elapsed seconds
+Timing for main: time 2019-11-26_12:10:48 on domain   1:    0.04424 elapsed seconds
+Timing for main: time 2019-11-26_12:12:00 on domain   1:    0.04823 elapsed seconds
+Timing for main: time 2019-11-26_12:13:12 on domain   1:    0.04580 elapsed seconds
+Timing for main: time 2019-11-26_12:14:24 on domain   1:    0.04939 elapsed seconds
+Timing for main: time 2019-11-26_12:15:36 on domain   1:    0.04755 elapsed seconds
+Timing for main: time 2019-11-26_12:16:48 on domain   1:    0.21806 elapsed seconds
+Timing for main: time 2019-11-26_12:18:00 on domain   1:    0.04696 elapsed seconds
+Timing for main: time 2019-11-26_12:19:12 on domain   1:    0.04686 elapsed seconds
+Timing for main: time 2019-11-26_12:20:24 on domain   1:    0.04744 elapsed seconds
+Timing for main: time 2019-11-26_12:21:36 on domain   1:    0.04836 elapsed seconds
+Timing for main: time 2019-11-26_12:22:48 on domain   1:    0.04621 elapsed seconds
+Timing for main: time 2019-11-26_12:24:00 on domain   1:    0.04741 elapsed seconds
+Timing for main: time 2019-11-26_12:25:12 on domain   1:    0.05011 elapsed seconds
+Timing for main: time 2019-11-26_12:26:24 on domain   1:    0.04777 elapsed seconds
+Timing for main: time 2019-11-26_12:27:36 on domain   1:    0.04808 elapsed seconds
+Timing for main: time 2019-11-26_12:28:48 on domain   1:    0.04912 elapsed seconds
+Timing for main: time 2019-11-26_12:30:00 on domain   1:    0.04708 elapsed seconds
+Timing for main: time 2019-11-26_12:31:12 on domain   1:    0.04894 elapsed seconds
+Timing for main: time 2019-11-26_12:32:24 on domain   1:    0.22253 elapsed seconds
+Timing for main: time 2019-11-26_12:33:36 on domain   1:    0.04728 elapsed seconds
+Timing for main: time 2019-11-26_12:34:48 on domain   1:    0.04911 elapsed seconds
+Timing for main: time 2019-11-26_12:36:00 on domain   1:    0.04855 elapsed seconds
+Timing for main: time 2019-11-26_12:37:12 on domain   1:    0.04774 elapsed seconds
+Timing for main: time 2019-11-26_12:38:24 on domain   1:    0.04969 elapsed seconds
+Timing for main: time 2019-11-26_12:39:36 on domain   1:    0.04873 elapsed seconds
+Timing for main: time 2019-11-26_12:40:48 on domain   1:    0.04961 elapsed seconds
+Timing for main: time 2019-11-26_12:42:00 on domain   1:    0.04956 elapsed seconds
+Timing for main: time 2019-11-26_12:43:12 on domain   1:    0.04929 elapsed seconds
+Timing for main: time 2019-11-26_12:44:24 on domain   1:    0.04993 elapsed seconds
+Timing for main: time 2019-11-26_12:45:36 on domain   1:    0.05221 elapsed seconds
+Timing for main: time 2019-11-26_12:46:48 on domain   1:    0.05030 elapsed seconds
+Timing for main: time 2019-11-26_12:48:00 on domain   1:    0.22455 elapsed seconds
+Timing for main: time 2019-11-26_12:49:12 on domain   1:    0.04962 elapsed seconds
+Timing for main: time 2019-11-26_12:50:24 on domain   1:    0.04997 elapsed seconds
+Timing for main: time 2019-11-26_12:51:36 on domain   1:    0.04734 elapsed seconds
+Timing for main: time 2019-11-26_12:52:48 on domain   1:    0.04938 elapsed seconds
+Timing for main: time 2019-11-26_12:54:00 on domain   1:    0.05041 elapsed seconds
+Timing for main: time 2019-11-26_12:55:12 on domain   1:    0.04924 elapsed seconds
+Timing for main: time 2019-11-26_12:56:24 on domain   1:    0.04919 elapsed seconds
+Timing for main: time 2019-11-26_12:57:36 on domain   1:    0.05428 elapsed seconds
+Timing for main: time 2019-11-26_12:58:48 on domain   1:    0.04956 elapsed seconds
+Timing for main: time 2019-11-26_13:00:00 on domain   1:    0.04995 elapsed seconds
+Timing for Writing wrfout_d01_2019-11-26_13:00:00 for domain        1:    1.29084 elapsed seconds
+Timing for main: time 2019-11-26_13:01:12 on domain   1:    1.33930 elapsed seconds
+Timing for main: time 2019-11-26_13:02:24 on domain   1:    0.05027 elapsed seconds
+Timing for main: time 2019-11-26_13:03:36 on domain   1:    0.24025 elapsed seconds
+Timing for main: time 2019-11-26_13:04:48 on domain   1:    0.04751 elapsed seconds
+Timing for main: time 2019-11-26_13:06:00 on domain   1:    0.04951 elapsed seconds
+Timing for main: time 2019-11-26_13:07:12 on domain   1:    0.04958 elapsed seconds
+Timing for main: time 2019-11-26_13:08:24 on domain   1:    0.04900 elapsed seconds
+Timing for main: time 2019-11-26_13:09:36 on domain   1:    0.04980 elapsed seconds
+Timing for main: time 2019-11-26_13:10:48 on domain   1:    0.05055 elapsed seconds
+Timing for main: time 2019-11-26_13:12:00 on domain   1:    0.05032 elapsed seconds
+Timing for main: time 2019-11-26_13:13:12 on domain   1:    0.04731 elapsed seconds
+Timing for main: time 2019-11-26_13:14:24 on domain   1:    0.05140 elapsed seconds
+Timing for main: time 2019-11-26_13:15:36 on domain   1:    0.04758 elapsed seconds
+Timing for main: time 2019-11-26_13:16:48 on domain   1:    0.05313 elapsed seconds
+Timing for main: time 2019-11-26_13:18:00 on domain   1:    0.04846 elapsed seconds
+Timing for main: time 2019-11-26_13:19:12 on domain   1:    0.24153 elapsed seconds
+Timing for main: time 2019-11-26_13:20:24 on domain   1:    0.04986 elapsed seconds
+Timing for main: time 2019-11-26_13:21:36 on domain   1:    0.04972 elapsed seconds
+Timing for main: time 2019-11-26_13:22:48 on domain   1:    0.04968 elapsed seconds
+Timing for main: time 2019-11-26_13:24:00 on domain   1:    0.04767 elapsed seconds
+Timing for main: time 2019-11-26_13:25:12 on domain   1:    0.05398 elapsed seconds
+Timing for main: time 2019-11-26_13:26:24 on domain   1:    0.04758 elapsed seconds
+Timing for main: time 2019-11-26_13:27:36 on domain   1:    0.05181 elapsed seconds
+Timing for main: time 2019-11-26_13:28:48 on domain   1:    0.04864 elapsed seconds
+Timing for main: time 2019-11-26_13:30:00 on domain   1:    0.05241 elapsed seconds
+Timing for main: time 2019-11-26_13:31:12 on domain   1:    0.04753 elapsed seconds
+Timing for main: time 2019-11-26_13:32:24 on domain   1:    0.05167 elapsed seconds
+Timing for main: time 2019-11-26_13:33:36 on domain   1:    0.04841 elapsed seconds
+Timing for main: time 2019-11-26_13:34:48 on domain   1:    0.23945 elapsed seconds
+Timing for main: time 2019-11-26_13:36:00 on domain   1:    0.05108 elapsed seconds
+Timing for main: time 2019-11-26_13:37:12 on domain   1:    0.04800 elapsed seconds
+Timing for main: time 2019-11-26_13:38:24 on domain   1:    0.05114 elapsed seconds
+Timing for main: time 2019-11-26_13:39:36 on domain   1:    0.04735 elapsed seconds
+Timing for main: time 2019-11-26_13:40:48 on domain   1:    0.05226 elapsed seconds
+Timing for main: time 2019-11-26_13:42:00 on domain   1:    0.04741 elapsed seconds
+Timing for main: time 2019-11-26_13:43:12 on domain   1:    0.05137 elapsed seconds
+Timing for main: time 2019-11-26_13:44:24 on domain   1:    0.04768 elapsed seconds
+Timing for main: time 2019-11-26_13:45:36 on domain   1:    0.04931 elapsed seconds
+Timing for main: time 2019-11-26_13:46:48 on domain   1:    0.04670 elapsed seconds
+Timing for main: time 2019-11-26_13:48:00 on domain   1:    0.05294 elapsed seconds
+Timing for main: time 2019-11-26_13:49:12 on domain   1:    0.04663 elapsed seconds
+Timing for main: time 2019-11-26_13:50:24 on domain   1:    0.24136 elapsed seconds
+Timing for main: time 2019-11-26_13:51:36 on domain   1:    0.05140 elapsed seconds
+Timing for main: time 2019-11-26_13:52:48 on domain   1:    0.04681 elapsed seconds
+Timing for main: time 2019-11-26_13:54:00 on domain   1:    0.05375 elapsed seconds
+Timing for main: time 2019-11-26_13:55:12 on domain   1:    0.04679 elapsed seconds
+Timing for main: time 2019-11-26_13:56:24 on domain   1:    0.05126 elapsed seconds
+Timing for main: time 2019-11-26_13:57:36 on domain   1:    0.04681 elapsed seconds
+Timing for main: time 2019-11-26_13:58:48 on domain   1:    0.04888 elapsed seconds
+Timing for main: time 2019-11-26_14:00:00 on domain   1:    0.04661 elapsed seconds
+Timing for Writing wrfout_d01_2019-11-26_14:00:00 for domain        1:    1.27630 elapsed seconds
+Timing for main: time 2019-11-26_14:01:12 on domain   1:    1.32361 elapsed seconds
+Timing for main: time 2019-11-26_14:02:24 on domain   1:    0.05197 elapsed seconds
+Timing for main: time 2019-11-26_14:03:36 on domain   1:    0.04725 elapsed seconds
+Timing for main: time 2019-11-26_14:04:48 on domain   1:    0.05130 elapsed seconds
+Timing for main: time 2019-11-26_14:06:00 on domain   1:    0.24067 elapsed seconds
+Timing for main: time 2019-11-26_14:07:12 on domain   1:    0.04738 elapsed seconds
+Timing for main: time 2019-11-26_14:08:24 on domain   1:    0.05275 elapsed seconds
+Timing for main: time 2019-11-26_14:09:36 on domain   1:    0.04744 elapsed seconds
+Timing for main: time 2019-11-26_14:10:48 on domain   1:    0.05291 elapsed seconds
+Timing for main: time 2019-11-26_14:12:00 on domain   1:    0.04786 elapsed seconds
+Timing for main: time 2019-11-26_14:13:12 on domain   1:    0.05283 elapsed seconds
+Timing for main: time 2019-11-26_14:14:24 on domain   1:    0.04845 elapsed seconds
+Timing for main: time 2019-11-26_14:15:36 on domain   1:    0.04995 elapsed seconds
+Timing for main: time 2019-11-26_14:16:48 on domain   1:    0.04901 elapsed seconds
+Timing for main: time 2019-11-26_14:18:00 on domain   1:    0.04997 elapsed seconds
+Timing for main: time 2019-11-26_14:19:12 on domain   1:    0.04668 elapsed seconds
+Timing for main: time 2019-11-26_14:20:24 on domain   1:    0.05076 elapsed seconds
+Timing for main: time 2019-11-26_14:21:36 on domain   1:    0.24308 elapsed seconds
+Timing for main: time 2019-11-26_14:22:48 on domain   1:    0.04701 elapsed seconds
+Timing for main: time 2019-11-26_14:24:00 on domain   1:    0.05196 elapsed seconds
+Timing for main: time 2019-11-26_14:25:12 on domain   1:    0.04775 elapsed seconds
+Timing for main: time 2019-11-26_14:26:24 on domain   1:    0.04924 elapsed seconds
+Timing for main: time 2019-11-26_14:27:36 on domain   1:    0.04769 elapsed seconds
+Timing for main: time 2019-11-26_14:28:48 on domain   1:    0.04866 elapsed seconds
+Timing for main: time 2019-11-26_14:30:00 on domain   1:    0.04704 elapsed seconds
+Timing for main: time 2019-11-26_14:31:12 on domain   1:    0.04919 elapsed seconds
+Timing for main: time 2019-11-26_14:32:24 on domain   1:    0.04796 elapsed seconds
+Timing for main: time 2019-11-26_14:33:36 on domain   1:    0.04736 elapsed seconds
+Timing for main: time 2019-11-26_14:34:48 on domain   1:    0.05003 elapsed seconds
+Timing for main: time 2019-11-26_14:36:00 on domain   1:    0.05058 elapsed seconds
+Timing for main: time 2019-11-26_14:37:12 on domain   1:    0.24797 elapsed seconds
+Timing for main: time 2019-11-26_14:38:24 on domain   1:    0.04684 elapsed seconds
+Timing for main: time 2019-11-26_14:39:36 on domain   1:    0.05085 elapsed seconds
+Timing for main: time 2019-11-26_14:40:48 on domain   1:    0.04654 elapsed seconds
+Timing for main: time 2019-11-26_14:42:00 on domain   1:    0.05275 elapsed seconds
+Timing for main: time 2019-11-26_14:43:12 on domain   1:    0.04645 elapsed seconds
+Timing for main: time 2019-11-26_14:44:24 on domain   1:    0.05085 elapsed seconds
+Timing for main: time 2019-11-26_14:45:36 on domain   1:    0.04879 elapsed seconds
+Timing for main: time 2019-11-26_14:46:48 on domain   1:    0.04920 elapsed seconds
+Timing for main: time 2019-11-26_14:48:00 on domain   1:    0.04947 elapsed seconds
+Timing for main: time 2019-11-26_14:49:12 on domain   1:    0.05060 elapsed seconds
+Timing for main: time 2019-11-26_14:50:24 on domain   1:    0.04998 elapsed seconds
+Timing for main: time 2019-11-26_14:51:36 on domain   1:    0.04681 elapsed seconds
+Timing for main: time 2019-11-26_14:52:48 on domain   1:    0.25188 elapsed seconds
+Timing for main: time 2019-11-26_14:54:00 on domain   1:    0.04726 elapsed seconds
+Timing for main: time 2019-11-26_14:55:12 on domain   1:    0.05206 elapsed seconds
+Timing for main: time 2019-11-26_14:56:24 on domain   1:    0.04716 elapsed seconds
+Timing for main: time 2019-11-26_14:57:36 on domain   1:    0.05139 elapsed seconds
+Timing for main: time 2019-11-26_14:58:48 on domain   1:    0.04724 elapsed seconds
+Timing for main: time 2019-11-26_15:00:00 on domain   1:    0.04915 elapsed seconds
+Timing for Writing wrfout_d01_2019-11-26_15:00:00 for domain        1:    1.25529 elapsed seconds
+ Input data is acceptable to use: wrfbdy_d01
+Timing for processing lateral boundary for domain        1:    0.78417 elapsed seconds
+Timing for main: time 2019-11-26_15:01:12 on domain   1:    2.08818 elapsed seconds
+Timing for main: time 2019-11-26_15:02:24 on domain   1:    0.04888 elapsed seconds
+Timing for main: time 2019-11-26_15:03:36 on domain   1:    0.04780 elapsed seconds
+Timing for main: time 2019-11-26_15:04:48 on domain   1:    0.04852 elapsed seconds
+Timing for main: time 2019-11-26_15:06:00 on domain   1:    0.05181 elapsed seconds
+Timing for main: time 2019-11-26_15:07:12 on domain   1:    0.04876 elapsed seconds
+Timing for main: time 2019-11-26_15:08:24 on domain   1:    0.24989 elapsed seconds
+Timing for main: time 2019-11-26_15:09:36 on domain   1:    0.04882 elapsed seconds
+Timing for main: time 2019-11-26_15:10:48 on domain   1:    0.05107 elapsed seconds
+Timing for main: time 2019-11-26_15:12:00 on domain   1:    0.04684 elapsed seconds
+Timing for main: time 2019-11-26_15:13:12 on domain   1:    0.04738 elapsed seconds
+Timing for main: time 2019-11-26_15:14:24 on domain   1:    0.04885 elapsed seconds
+Timing for main: time 2019-11-26_15:15:36 on domain   1:    0.04961 elapsed seconds
+Timing for main: time 2019-11-26_15:16:48 on domain   1:    0.04981 elapsed seconds
+Timing for main: time 2019-11-26_15:18:00 on domain   1:    0.04858 elapsed seconds
+Timing for main: time 2019-11-26_15:19:12 on domain   1:    0.05240 elapsed seconds
+Timing for main: time 2019-11-26_15:20:24 on domain   1:    0.04791 elapsed seconds
+Timing for main: time 2019-11-26_15:21:36 on domain   1:    0.05388 elapsed seconds
+Timing for main: time 2019-11-26_15:22:48 on domain   1:    0.04781 elapsed seconds
+Timing for main: time 2019-11-26_15:24:00 on domain   1:    0.24732 elapsed seconds
+Timing for main: time 2019-11-26_15:25:12 on domain   1:    0.04900 elapsed seconds
+Timing for main: time 2019-11-26_15:26:24 on domain   1:    0.04904 elapsed seconds
+Timing for main: time 2019-11-26_15:27:36 on domain   1:    0.05156 elapsed seconds
+Timing for main: time 2019-11-26_15:28:48 on domain   1:    0.05009 elapsed seconds
+Timing for main: time 2019-11-26_15:30:00 on domain   1:    0.05028 elapsed seconds
+Timing for main: time 2019-11-26_15:31:12 on domain   1:    0.05022 elapsed seconds
+Timing for main: time 2019-11-26_15:32:24 on domain   1:    0.05025 elapsed seconds
+Timing for main: time 2019-11-26_15:33:36 on domain   1:    0.04853 elapsed seconds
+Timing for main: time 2019-11-26_15:34:48 on domain   1:    0.04984 elapsed seconds
+Timing for main: time 2019-11-26_15:36:00 on domain   1:    0.05051 elapsed seconds
+Timing for main: time 2019-11-26_15:37:12 on domain   1:    0.04907 elapsed seconds
+Timing for main: time 2019-11-26_15:38:24 on domain   1:    0.04842 elapsed seconds
+Timing for main: time 2019-11-26_15:39:36 on domain   1:    0.24665 elapsed seconds
+Timing for main: time 2019-11-26_15:40:48 on domain   1:    0.04899 elapsed seconds
+Timing for main: time 2019-11-26_15:42:00 on domain   1:    0.05015 elapsed seconds
+Timing for main: time 2019-11-26_15:43:12 on domain   1:    0.04952 elapsed seconds
+Timing for main: time 2019-11-26_15:44:24 on domain   1:    0.04749 elapsed seconds
+Timing for main: time 2019-11-26_15:45:36 on domain   1:    0.04976 elapsed seconds
+Timing for main: time 2019-11-26_15:46:48 on domain   1:    0.04845 elapsed seconds
+Timing for main: time 2019-11-26_15:48:00 on domain   1:    0.05196 elapsed seconds
+Timing for main: time 2019-11-26_15:49:12 on domain   1:    0.04922 elapsed seconds
+Timing for main: time 2019-11-26_15:50:24 on domain   1:    0.05201 elapsed seconds
+Timing for main: time 2019-11-26_15:51:36 on domain   1:    0.04754 elapsed seconds
+Timing for main: time 2019-11-26_15:52:48 on domain   1:    0.04835 elapsed seconds
+Timing for main: time 2019-11-26_15:54:00 on domain   1:    0.04952 elapsed seconds
+Timing for main: time 2019-11-26_15:55:12 on domain   1:    0.24771 elapsed seconds
+Timing for main: time 2019-11-26_15:56:24 on domain   1:    0.05106 elapsed seconds
+Timing for main: time 2019-11-26_15:57:36 on domain   1:    0.04802 elapsed seconds
+Timing for main: time 2019-11-26_15:58:48 on domain   1:    0.05150 elapsed seconds
+Timing for main: time 2019-11-26_16:00:00 on domain   1:    0.05105 elapsed seconds
+Timing for Writing wrfout_d01_2019-11-26_16:00:00 for domain        1:    1.26338 elapsed seconds
+Timing for main: time 2019-11-26_16:01:12 on domain   1:    1.31256 elapsed seconds
+Timing for main: time 2019-11-26_16:02:24 on domain   1:    0.05003 elapsed seconds
+Timing for main: time 2019-11-26_16:03:36 on domain   1:    0.05023 elapsed seconds
+Timing for main: time 2019-11-26_16:04:48 on domain   1:    0.05094 elapsed seconds
+Timing for main: time 2019-11-26_16:06:00 on domain   1:    0.04979 elapsed seconds
+Timing for main: time 2019-11-26_16:07:12 on domain   1:    0.05157 elapsed seconds
+Timing for main: time 2019-11-26_16:08:24 on domain   1:    0.05117 elapsed seconds
+Timing for main: time 2019-11-26_16:09:36 on domain   1:    0.05057 elapsed seconds
+Timing for main: time 2019-11-26_16:10:48 on domain   1:    0.24679 elapsed seconds
+Timing for main: time 2019-11-26_16:12:00 on domain   1:    0.04647 elapsed seconds
+Timing for main: time 2019-11-26_16:13:12 on domain   1:    0.05303 elapsed seconds
+Timing for main: time 2019-11-26_16:14:24 on domain   1:    0.04667 elapsed seconds
+Timing for main: time 2019-11-26_16:15:36 on domain   1:    0.05575 elapsed seconds
+Timing for main: time 2019-11-26_16:16:48 on domain   1:    0.04637 elapsed seconds
+Timing for main: time 2019-11-26_16:18:00 on domain   1:    0.05070 elapsed seconds
+Timing for main: time 2019-11-26_16:19:12 on domain   1:    0.04945 elapsed seconds
+Timing for main: time 2019-11-26_16:20:24 on domain   1:    0.05186 elapsed seconds
+Timing for main: time 2019-11-26_16:21:36 on domain   1:    0.04898 elapsed seconds
+Timing for main: time 2019-11-26_16:22:48 on domain   1:    0.05148 elapsed seconds
+Timing for main: time 2019-11-26_16:24:00 on domain   1:    0.05028 elapsed seconds
+Timing for main: time 2019-11-26_16:25:12 on domain   1:    0.05065 elapsed seconds
+Timing for main: time 2019-11-26_16:26:24 on domain   1:    0.24775 elapsed seconds
+Timing for main: time 2019-11-26_16:27:36 on domain   1:    0.04726 elapsed seconds
+Timing for main: time 2019-11-26_16:28:48 on domain   1:    0.04901 elapsed seconds
+Timing for main: time 2019-11-26_16:30:00 on domain   1:    0.04775 elapsed seconds
+Timing for main: time 2019-11-26_16:31:12 on domain   1:    0.05307 elapsed seconds
+Timing for main: time 2019-11-26_16:32:24 on domain   1:    0.04812 elapsed seconds
+Timing for main: time 2019-11-26_16:33:36 on domain   1:    0.04973 elapsed seconds
+Timing for main: time 2019-11-26_16:34:48 on domain   1:    0.04978 elapsed seconds
+Timing for main: time 2019-11-26_16:36:00 on domain   1:    0.04916 elapsed seconds
+Timing for main: time 2019-11-26_16:37:12 on domain   1:    0.05154 elapsed seconds
+Timing for main: time 2019-11-26_16:38:24 on domain   1:    0.05003 elapsed seconds
+Timing for main: time 2019-11-26_16:39:36 on domain   1:    0.04997 elapsed seconds
+Timing for main: time 2019-11-26_16:40:48 on domain   1:    0.04889 elapsed seconds
+Timing for main: time 2019-11-26_16:42:00 on domain   1:    0.24509 elapsed seconds
+Timing for main: time 2019-11-26_16:43:12 on domain   1:    0.04801 elapsed seconds
+Timing for main: time 2019-11-26_16:44:24 on domain   1:    0.05015 elapsed seconds
+Timing for main: time 2019-11-26_16:45:36 on domain   1:    0.05027 elapsed seconds
+Timing for main: time 2019-11-26_16:46:48 on domain   1:    0.04913 elapsed seconds
+Timing for main: time 2019-11-26_16:48:00 on domain   1:    0.05130 elapsed seconds
+Timing for main: time 2019-11-26_16:49:12 on domain   1:    0.04825 elapsed seconds
+Timing for main: time 2019-11-26_16:50:24 on domain   1:    0.05090 elapsed seconds
+Timing for main: time 2019-11-26_16:51:36 on domain   1:    0.04869 elapsed seconds
+Timing for main: time 2019-11-26_16:52:48 on domain   1:    0.05011 elapsed seconds
+Timing for main: time 2019-11-26_16:54:00 on domain   1:    0.04987 elapsed seconds
+Timing for main: time 2019-11-26_16:55:12 on domain   1:    0.04969 elapsed seconds
+Timing for main: time 2019-11-26_16:56:24 on domain   1:    0.04709 elapsed seconds
+Timing for main: time 2019-11-26_16:57:36 on domain   1:    0.24688 elapsed seconds
+Timing for main: time 2019-11-26_16:58:48 on domain   1:    0.04994 elapsed seconds
+Timing for main: time 2019-11-26_17:00:00 on domain   1:    0.04973 elapsed seconds
+Timing for Writing wrfout_d01_2019-11-26_17:00:00 for domain        1:    1.26990 elapsed seconds
+Timing for main: time 2019-11-26_17:01:12 on domain   1:    1.31951 elapsed seconds
+Timing for main: time 2019-11-26_17:02:24 on domain   1:    0.05038 elapsed seconds
+Timing for main: time 2019-11-26_17:03:36 on domain   1:    0.04672 elapsed seconds
+Timing for main: time 2019-11-26_17:04:48 on domain   1:    0.05035 elapsed seconds
+Timing for main: time 2019-11-26_17:06:00 on domain   1:    0.04924 elapsed seconds
+Timing for main: time 2019-11-26_17:07:12 on domain   1:    0.04751 elapsed seconds
+Timing for main: time 2019-11-26_17:08:24 on domain   1:    0.04854 elapsed seconds
+Timing for main: time 2019-11-26_17:09:36 on domain   1:    0.05119 elapsed seconds
+Timing for main: time 2019-11-26_17:10:48 on domain   1:    0.04884 elapsed seconds
+Timing for main: time 2019-11-26_17:12:00 on domain   1:    0.04973 elapsed seconds
+Timing for main: time 2019-11-26_17:13:12 on domain   1:    0.24905 elapsed seconds
+Timing for main: time 2019-11-26_17:14:24 on domain   1:    0.04851 elapsed seconds
+Timing for main: time 2019-11-26_17:15:36 on domain   1:    0.05037 elapsed seconds
+Timing for main: time 2019-11-26_17:16:48 on domain   1:    0.04783 elapsed seconds
+Timing for main: time 2019-11-26_17:18:00 on domain   1:    0.05005 elapsed seconds
+Timing for main: time 2019-11-26_17:19:12 on domain   1:    0.04805 elapsed seconds
+Timing for main: time 2019-11-26_17:20:24 on domain   1:    0.04902 elapsed seconds
+Timing for main: time 2019-11-26_17:21:36 on domain   1:    0.05110 elapsed seconds
+Timing for main: time 2019-11-26_17:22:48 on domain   1:    0.05012 elapsed seconds
+Timing for main: time 2019-11-26_17:24:00 on domain   1:    0.04998 elapsed seconds
+Timing for main: time 2019-11-26_17:25:12 on domain   1:    0.05139 elapsed seconds
+Timing for main: time 2019-11-26_17:26:24 on domain   1:    0.05199 elapsed seconds
+Timing for main: time 2019-11-26_17:27:36 on domain   1:    0.05098 elapsed seconds
+Timing for main: time 2019-11-26_17:28:48 on domain   1:    0.24781 elapsed seconds
+Timing for main: time 2019-11-26_17:30:00 on domain   1:    0.05000 elapsed seconds
+Timing for main: time 2019-11-26_17:31:12 on domain   1:    0.04943 elapsed seconds
+Timing for main: time 2019-11-26_17:32:24 on domain   1:    0.05097 elapsed seconds
+Timing for main: time 2019-11-26_17:33:36 on domain   1:    0.04930 elapsed seconds
+Timing for main: time 2019-11-26_17:34:48 on domain   1:    0.04995 elapsed seconds
+Timing for main: time 2019-11-26_17:36:00 on domain   1:    0.05025 elapsed seconds
+Timing for main: time 2019-11-26_17:37:12 on domain   1:    0.04923 elapsed seconds
+Timing for main: time 2019-11-26_17:38:24 on domain   1:    0.05238 elapsed seconds
+Timing for main: time 2019-11-26_17:39:36 on domain   1:    0.04886 elapsed seconds
+Timing for main: time 2019-11-26_17:40:48 on domain   1:    0.05065 elapsed seconds
+Timing for main: time 2019-11-26_17:42:00 on domain   1:    0.05116 elapsed seconds
+Timing for main: time 2019-11-26_17:43:12 on domain   1:    0.04954 elapsed seconds
+Timing for main: time 2019-11-26_17:44:24 on domain   1:    0.25064 elapsed seconds
+Timing for main: time 2019-11-26_17:45:36 on domain   1:    0.04962 elapsed seconds
+Timing for main: time 2019-11-26_17:46:48 on domain   1:    0.04768 elapsed seconds
+Timing for main: time 2019-11-26_17:48:00 on domain   1:    0.04771 elapsed seconds
+Timing for main: time 2019-11-26_17:49:12 on domain   1:    0.05012 elapsed seconds
+Timing for main: time 2019-11-26_17:50:24 on domain   1:    0.05212 elapsed seconds
+Timing for main: time 2019-11-26_17:51:36 on domain   1:    0.04744 elapsed seconds
+Timing for main: time 2019-11-26_17:52:48 on domain   1:    0.05025 elapsed seconds
+Timing for main: time 2019-11-26_17:54:00 on domain   1:    0.05016 elapsed seconds
+Timing for main: time 2019-11-26_17:55:12 on domain   1:    0.04953 elapsed seconds
+Timing for main: time 2019-11-26_17:56:24 on domain   1:    0.04800 elapsed seconds
+Timing for main: time 2019-11-26_17:57:36 on domain   1:    0.05150 elapsed seconds
+Timing for main: time 2019-11-26_17:58:48 on domain   1:    0.04877 elapsed seconds
+Timing for main: time 2019-11-26_18:00:00 on domain   1:    0.24826 elapsed seconds
+Timing for Writing wrfout_d01_2019-11-26_18:00:00 for domain        1:    1.26701 elapsed seconds
+ Input data is acceptable to use: wrfbdy_d01
+Timing for processing lateral boundary for domain        1:    0.79797 elapsed seconds
+Timing for main: time 2019-11-26_18:01:12 on domain   1:    2.11280 elapsed seconds
+Timing for main: time 2019-11-26_18:02:24 on domain   1:    0.05021 elapsed seconds
+Timing for main: time 2019-11-26_18:03:36 on domain   1:    0.04980 elapsed seconds
+Timing for main: time 2019-11-26_18:04:48 on domain   1:    0.05091 elapsed seconds
+Timing for main: time 2019-11-26_18:06:00 on domain   1:    0.04887 elapsed seconds
+Timing for main: time 2019-11-26_18:07:12 on domain   1:    0.05144 elapsed seconds
+Timing for main: time 2019-11-26_18:08:24 on domain   1:    0.04938 elapsed seconds
+Timing for main: time 2019-11-26_18:09:36 on domain   1:    0.04789 elapsed seconds
+Timing for main: time 2019-11-26_18:10:48 on domain   1:    0.04895 elapsed seconds
+Timing for main: time 2019-11-26_18:12:00 on domain   1:    0.04773 elapsed seconds
+Timing for main: time 2019-11-26_18:13:12 on domain   1:    0.05189 elapsed seconds
+Timing for main: time 2019-11-26_18:14:24 on domain   1:    0.04902 elapsed seconds
+Timing for main: time 2019-11-26_18:15:36 on domain   1:    0.24845 elapsed seconds
+Timing for main: time 2019-11-26_18:16:48 on domain   1:    0.04942 elapsed seconds
+Timing for main: time 2019-11-26_18:18:00 on domain   1:    0.05026 elapsed seconds
+Timing for main: time 2019-11-26_18:19:12 on domain   1:    0.05118 elapsed seconds
+Timing for main: time 2019-11-26_18:20:24 on domain   1:    0.05134 elapsed seconds
+Timing for main: time 2019-11-26_18:21:36 on domain   1:    0.05134 elapsed seconds
+Timing for main: time 2019-11-26_18:22:48 on domain   1:    0.04864 elapsed seconds
+Timing for main: time 2019-11-26_18:24:00 on domain   1:    0.05124 elapsed seconds
+Timing for main: time 2019-11-26_18:25:12 on domain   1:    0.04907 elapsed seconds
+Timing for main: time 2019-11-26_18:26:24 on domain   1:    0.05043 elapsed seconds
+Timing for main: time 2019-11-26_18:27:36 on domain   1:    0.04901 elapsed seconds
+Timing for main: time 2019-11-26_18:28:48 on domain   1:    0.05382 elapsed seconds
+Timing for main: time 2019-11-26_18:30:00 on domain   1:    0.05009 elapsed seconds
+Timing for main: time 2019-11-26_18:31:12 on domain   1:    0.24960 elapsed seconds
+Timing for main: time 2019-11-26_18:32:24 on domain   1:    0.04802 elapsed seconds
+Timing for main: time 2019-11-26_18:33:36 on domain   1:    0.05159 elapsed seconds
+Timing for main: time 2019-11-26_18:34:48 on domain   1:    0.04828 elapsed seconds
+Timing for main: time 2019-11-26_18:36:00 on domain   1:    0.04888 elapsed seconds
+Timing for main: time 2019-11-26_18:37:12 on domain   1:    0.05100 elapsed seconds
+Timing for main: time 2019-11-26_18:38:24 on domain   1:    0.04750 elapsed seconds
+Timing for main: time 2019-11-26_18:39:36 on domain   1:    0.05447 elapsed seconds
+Timing for main: time 2019-11-26_18:40:48 on domain   1:    0.04795 elapsed seconds
+Timing for main: time 2019-11-26_18:42:00 on domain   1:    0.05155 elapsed seconds
+Timing for main: time 2019-11-26_18:43:12 on domain   1:    0.04865 elapsed seconds
+Timing for main: time 2019-11-26_18:44:24 on domain   1:    0.05216 elapsed seconds
+Timing for main: time 2019-11-26_18:45:36 on domain   1:    0.04957 elapsed seconds
+Timing for main: time 2019-11-26_18:46:48 on domain   1:    0.25061 elapsed seconds
+Timing for main: time 2019-11-26_18:48:00 on domain   1:    0.04717 elapsed seconds
+Timing for main: time 2019-11-26_18:49:12 on domain   1:    0.04792 elapsed seconds
+Timing for main: time 2019-11-26_18:50:24 on domain   1:    0.05163 elapsed seconds
+Timing for main: time 2019-11-26_18:51:36 on domain   1:    0.04835 elapsed seconds
+Timing for main: time 2019-11-26_18:52:48 on domain   1:    0.05398 elapsed seconds
+Timing for main: time 2019-11-26_18:54:00 on domain   1:    0.04902 elapsed seconds
+Timing for main: time 2019-11-26_18:55:12 on domain   1:    0.05121 elapsed seconds
+Timing for main: time 2019-11-26_18:56:24 on domain   1:    0.04822 elapsed seconds
+Timing for main: time 2019-11-26_18:57:36 on domain   1:    0.04972 elapsed seconds
+Timing for main: time 2019-11-26_18:58:48 on domain   1:    0.05034 elapsed seconds
+Timing for main: time 2019-11-26_19:00:00 on domain   1:    0.04929 elapsed seconds
+Timing for Writing wrfout_d01_2019-11-26_19:00:00 for domain        1:    1.25907 elapsed seconds
+Timing for main: time 2019-11-26_19:01:12 on domain   1:    1.30645 elapsed seconds
+Timing for main: time 2019-11-26_19:02:24 on domain   1:    0.24905 elapsed seconds
+Timing for main: time 2019-11-26_19:03:36 on domain   1:    0.04957 elapsed seconds
+Timing for main: time 2019-11-26_19:04:48 on domain   1:    0.05085 elapsed seconds
+Timing for main: time 2019-11-26_19:06:00 on domain   1:    0.04943 elapsed seconds
+Timing for main: time 2019-11-26_19:07:12 on domain   1:    0.04781 elapsed seconds
+Timing for main: time 2019-11-26_19:08:24 on domain   1:    0.05220 elapsed seconds
+Timing for main: time 2019-11-26_19:09:36 on domain   1:    0.04911 elapsed seconds
+Timing for main: time 2019-11-26_19:10:48 on domain   1:    0.05107 elapsed seconds
+Timing for main: time 2019-11-26_19:12:00 on domain   1:    0.04686 elapsed seconds
+Timing for main: time 2019-11-26_19:13:12 on domain   1:    0.05102 elapsed seconds
+Timing for main: time 2019-11-26_19:14:24 on domain   1:    0.04827 elapsed seconds
+Timing for main: time 2019-11-26_19:15:36 on domain   1:    0.05251 elapsed seconds
+Timing for main: time 2019-11-26_19:16:48 on domain   1:    0.04874 elapsed seconds
+Timing for main: time 2019-11-26_19:18:00 on domain   1:    0.24644 elapsed seconds
+Timing for main: time 2019-11-26_19:19:12 on domain   1:    0.05442 elapsed seconds
+Timing for main: time 2019-11-26_19:20:24 on domain   1:    0.04676 elapsed seconds
+Timing for main: time 2019-11-26_19:21:36 on domain   1:    0.05289 elapsed seconds
+Timing for main: time 2019-11-26_19:22:48 on domain   1:    0.04837 elapsed seconds
+Timing for main: time 2019-11-26_19:24:00 on domain   1:    0.04972 elapsed seconds
+Timing for main: time 2019-11-26_19:25:12 on domain   1:    0.04809 elapsed seconds
+Timing for main: time 2019-11-26_19:26:24 on domain   1:    0.05177 elapsed seconds
+Timing for main: time 2019-11-26_19:27:36 on domain   1:    0.04867 elapsed seconds
+Timing for main: time 2019-11-26_19:28:48 on domain   1:    0.05270 elapsed seconds
+Timing for main: time 2019-11-26_19:30:00 on domain   1:    0.04952 elapsed seconds
+Timing for main: time 2019-11-26_19:31:12 on domain   1:    0.05052 elapsed seconds
+Timing for main: time 2019-11-26_19:32:24 on domain   1:    0.04990 elapsed seconds
+Timing for main: time 2019-11-26_19:33:36 on domain   1:    0.25012 elapsed seconds
+Timing for main: time 2019-11-26_19:34:48 on domain   1:    0.05187 elapsed seconds
+Timing for main: time 2019-11-26_19:36:00 on domain   1:    0.05019 elapsed seconds
+Timing for main: time 2019-11-26_19:37:12 on domain   1:    0.04836 elapsed seconds
+Timing for main: time 2019-11-26_19:38:24 on domain   1:    0.04758 elapsed seconds
+Timing for main: time 2019-11-26_19:39:36 on domain   1:    0.04943 elapsed seconds
+Timing for main: time 2019-11-26_19:40:48 on domain   1:    0.04845 elapsed seconds
+Timing for main: time 2019-11-26_19:42:00 on domain   1:    0.04948 elapsed seconds
+Timing for main: time 2019-11-26_19:43:12 on domain   1:    0.05028 elapsed seconds
+Timing for main: time 2019-11-26_19:44:24 on domain   1:    0.05066 elapsed seconds
+Timing for main: time 2019-11-26_19:45:36 on domain   1:    0.04788 elapsed seconds
+Timing for main: time 2019-11-26_19:46:48 on domain   1:    0.04998 elapsed seconds
+Timing for main: time 2019-11-26_19:48:00 on domain   1:    0.05163 elapsed seconds
+Timing for main: time 2019-11-26_19:49:12 on domain   1:    0.24809 elapsed seconds
+Timing for main: time 2019-11-26_19:50:24 on domain   1:    0.04933 elapsed seconds
+Timing for main: time 2019-11-26_19:51:36 on domain   1:    0.04600 elapsed seconds
+Timing for main: time 2019-11-26_19:52:48 on domain   1:    0.04963 elapsed seconds
+Timing for main: time 2019-11-26_19:54:00 on domain   1:    0.05014 elapsed seconds
+Timing for main: time 2019-11-26_19:55:12 on domain   1:    0.05176 elapsed seconds
+Timing for main: time 2019-11-26_19:56:24 on domain   1:    0.04987 elapsed seconds
+Timing for main: time 2019-11-26_19:57:36 on domain   1:    0.05278 elapsed seconds
+Timing for main: time 2019-11-26_19:58:48 on domain   1:    0.04986 elapsed seconds
+Timing for main: time 2019-11-26_20:00:00 on domain   1:    0.05119 elapsed seconds
+Timing for Writing wrfout_d01_2019-11-26_20:00:00 for domain        1:    1.27104 elapsed seconds
+Timing for main: time 2019-11-26_20:01:12 on domain   1:    1.31957 elapsed seconds
+Timing for main: time 2019-11-26_20:02:24 on domain   1:    0.04979 elapsed seconds
+Timing for main: time 2019-11-26_20:03:36 on domain   1:    0.05121 elapsed seconds
+Timing for main: time 2019-11-26_20:04:48 on domain   1:    0.24539 elapsed seconds
+Timing for main: time 2019-11-26_20:06:00 on domain   1:    0.05097 elapsed seconds
+Timing for main: time 2019-11-26_20:07:12 on domain   1:    0.04969 elapsed seconds
+Timing for main: time 2019-11-26_20:08:24 on domain   1:    0.05128 elapsed seconds
+Timing for main: time 2019-11-26_20:09:36 on domain   1:    0.04882 elapsed seconds
+Timing for main: time 2019-11-26_20:10:48 on domain   1:    0.05148 elapsed seconds
+Timing for main: time 2019-11-26_20:12:00 on domain   1:    0.04873 elapsed seconds
+Timing for main: time 2019-11-26_20:13:12 on domain   1:    0.05191 elapsed seconds
+Timing for main: time 2019-11-26_20:14:24 on domain   1:    0.04944 elapsed seconds
+Timing for main: time 2019-11-26_20:15:36 on domain   1:    0.05212 elapsed seconds
+Timing for main: time 2019-11-26_20:16:48 on domain   1:    0.04970 elapsed seconds
+Timing for main: time 2019-11-26_20:18:00 on domain   1:    0.05264 elapsed seconds
+Timing for main: time 2019-11-26_20:19:12 on domain   1:    0.04969 elapsed seconds
+Timing for main: time 2019-11-26_20:20:24 on domain   1:    0.24656 elapsed seconds
+Timing for main: time 2019-11-26_20:21:36 on domain   1:    0.05221 elapsed seconds
+Timing for main: time 2019-11-26_20:22:48 on domain   1:    0.04874 elapsed seconds
+Timing for main: time 2019-11-26_20:24:00 on domain   1:    0.05183 elapsed seconds
+Timing for main: time 2019-11-26_20:25:12 on domain   1:    0.05012 elapsed seconds
+Timing for main: time 2019-11-26_20:26:24 on domain   1:    0.04978 elapsed seconds
+Timing for main: time 2019-11-26_20:27:36 on domain   1:    0.05007 elapsed seconds
+Timing for main: time 2019-11-26_20:28:48 on domain   1:    0.05175 elapsed seconds
+Timing for main: time 2019-11-26_20:30:00 on domain   1:    0.04988 elapsed seconds
+Timing for main: time 2019-11-26_20:31:12 on domain   1:    0.05218 elapsed seconds
+Timing for main: time 2019-11-26_20:32:24 on domain   1:    0.04902 elapsed seconds
+Timing for main: time 2019-11-26_20:33:36 on domain   1:    0.05282 elapsed seconds
+Timing for main: time 2019-11-26_20:34:48 on domain   1:    0.04955 elapsed seconds
+Timing for main: time 2019-11-26_20:36:00 on domain   1:    0.24690 elapsed seconds
+Timing for main: time 2019-11-26_20:37:12 on domain   1:    0.05133 elapsed seconds
+Timing for main: time 2019-11-26_20:38:24 on domain   1:    0.04882 elapsed seconds
+Timing for main: time 2019-11-26_20:39:36 on domain   1:    0.05151 elapsed seconds
+Timing for main: time 2019-11-26_20:40:48 on domain   1:    0.04948 elapsed seconds
+Timing for main: time 2019-11-26_20:42:00 on domain   1:    0.05179 elapsed seconds
+Timing for main: time 2019-11-26_20:43:12 on domain   1:    0.04957 elapsed seconds
+Timing for main: time 2019-11-26_20:44:24 on domain   1:    0.05142 elapsed seconds
+Timing for main: time 2019-11-26_20:45:36 on domain   1:    0.04995 elapsed seconds
+Timing for main: time 2019-11-26_20:46:48 on domain   1:    0.05057 elapsed seconds
+Timing for main: time 2019-11-26_20:48:00 on domain   1:    0.05027 elapsed seconds
+Timing for main: time 2019-11-26_20:49:12 on domain   1:    0.05115 elapsed seconds
+Timing for main: time 2019-11-26_20:50:24 on domain   1:    0.04949 elapsed seconds
+Timing for main: time 2019-11-26_20:51:36 on domain   1:    0.25025 elapsed seconds
+Timing for main: time 2019-11-26_20:52:48 on domain   1:    0.04604 elapsed seconds
+Timing for main: time 2019-11-26_20:54:00 on domain   1:    0.04977 elapsed seconds
+Timing for main: time 2019-11-26_20:55:12 on domain   1:    0.05001 elapsed seconds
+Timing for main: time 2019-11-26_20:56:24 on domain   1:    0.04847 elapsed seconds
+Timing for main: time 2019-11-26_20:57:36 on domain   1:    0.05208 elapsed seconds
+Timing for main: time 2019-11-26_20:58:48 on domain   1:    0.04975 elapsed seconds
+Timing for main: time 2019-11-26_21:00:00 on domain   1:    0.05152 elapsed seconds
+Timing for Writing wrfout_d01_2019-11-26_21:00:00 for domain        1:    1.28872 elapsed seconds
+ Input data is acceptable to use: wrfbdy_d01
+Timing for processing lateral boundary for domain        1:    0.77956 elapsed seconds
+Timing for main: time 2019-11-26_21:01:12 on domain   1:    2.12067 elapsed seconds
+Timing for main: time 2019-11-26_21:02:24 on domain   1:    0.04658 elapsed seconds
+Timing for main: time 2019-11-26_21:03:36 on domain   1:    0.05396 elapsed seconds
+Timing for main: time 2019-11-26_21:04:48 on domain   1:    0.04741 elapsed seconds
+Timing for main: time 2019-11-26_21:06:00 on domain   1:    0.05139 elapsed seconds
+Timing for main: time 2019-11-26_21:07:12 on domain   1:    0.25159 elapsed seconds
+Timing for main: time 2019-11-26_21:08:24 on domain   1:    0.04944 elapsed seconds
+Timing for main: time 2019-11-26_21:09:36 on domain   1:    0.05245 elapsed seconds
+Timing for main: time 2019-11-26_21:10:48 on domain   1:    0.04895 elapsed seconds
+Timing for main: time 2019-11-26_21:12:00 on domain   1:    0.05102 elapsed seconds
+Timing for main: time 2019-11-26_21:13:12 on domain   1:    0.04651 elapsed seconds
+Timing for main: time 2019-11-26_21:14:24 on domain   1:    0.05107 elapsed seconds
+Timing for main: time 2019-11-26_21:15:36 on domain   1:    0.04801 elapsed seconds
+Timing for main: time 2019-11-26_21:16:48 on domain   1:    0.05289 elapsed seconds
+Timing for main: time 2019-11-26_21:18:00 on domain   1:    0.04739 elapsed seconds
+Timing for main: time 2019-11-26_21:19:12 on domain   1:    0.05446 elapsed seconds
+Timing for main: time 2019-11-26_21:20:24 on domain   1:    0.04933 elapsed seconds
+Timing for main: time 2019-11-26_21:21:36 on domain   1:    0.05408 elapsed seconds
+Timing for main: time 2019-11-26_21:22:48 on domain   1:    0.24511 elapsed seconds
+Timing for main: time 2019-11-26_21:24:00 on domain   1:    0.04851 elapsed seconds
+Timing for main: time 2019-11-26_21:25:12 on domain   1:    0.04976 elapsed seconds
+Timing for main: time 2019-11-26_21:26:24 on domain   1:    0.05056 elapsed seconds
+Timing for main: time 2019-11-26_21:27:36 on domain   1:    0.05215 elapsed seconds
+Timing for main: time 2019-11-26_21:28:48 on domain   1:    0.04814 elapsed seconds
+Timing for main: time 2019-11-26_21:30:00 on domain   1:    0.05268 elapsed seconds
+Timing for main: time 2019-11-26_21:31:12 on domain   1:    0.04844 elapsed seconds
+Timing for main: time 2019-11-26_21:32:24 on domain   1:    0.04930 elapsed seconds
+Timing for main: time 2019-11-26_21:33:36 on domain   1:    0.04782 elapsed seconds
+Timing for main: time 2019-11-26_21:34:48 on domain   1:    0.05370 elapsed seconds
+Timing for main: time 2019-11-26_21:36:00 on domain   1:    0.04790 elapsed seconds
+Timing for main: time 2019-11-26_21:37:12 on domain   1:    0.05467 elapsed seconds
+Timing for main: time 2019-11-26_21:38:24 on domain   1:    0.24840 elapsed seconds
+Timing for main: time 2019-11-26_21:39:36 on domain   1:    0.04898 elapsed seconds
+Timing for main: time 2019-11-26_21:40:48 on domain   1:    0.05270 elapsed seconds
+Timing for main: time 2019-11-26_21:42:00 on domain   1:    0.04942 elapsed seconds
+Timing for main: time 2019-11-26_21:43:12 on domain   1:    0.05249 elapsed seconds
+Timing for main: time 2019-11-26_21:44:24 on domain   1:    0.05122 elapsed seconds
+Timing for main: time 2019-11-26_21:45:36 on domain   1:    0.05165 elapsed seconds
+Timing for main: time 2019-11-26_21:46:48 on domain   1:    0.04760 elapsed seconds
+Timing for main: time 2019-11-26_21:48:00 on domain   1:    0.04975 elapsed seconds
+Timing for main: time 2019-11-26_21:49:12 on domain   1:    0.04836 elapsed seconds
+Timing for main: time 2019-11-26_21:50:24 on domain   1:    0.05014 elapsed seconds
+Timing for main: time 2019-11-26_21:51:36 on domain   1:    0.04754 elapsed seconds
+Timing for main: time 2019-11-26_21:52:48 on domain   1:    0.05113 elapsed seconds
+Timing for main: time 2019-11-26_21:54:00 on domain   1:    0.24703 elapsed seconds
+Timing for main: time 2019-11-26_21:55:12 on domain   1:    0.05210 elapsed seconds
+Timing for main: time 2019-11-26_21:56:24 on domain   1:    0.04713 elapsed seconds
+Timing for main: time 2019-11-26_21:57:36 on domain   1:    0.05212 elapsed seconds
+Timing for main: time 2019-11-26_21:58:48 on domain   1:    0.04737 elapsed seconds
+Timing for main: time 2019-11-26_22:00:00 on domain   1:    0.04857 elapsed seconds
+Timing for Writing wrfout_d01_2019-11-26_22:00:00 for domain        1:    1.27461 elapsed seconds
+Timing for main: time 2019-11-26_22:01:12 on domain   1:    1.32780 elapsed seconds
+Timing for main: time 2019-11-26_22:02:24 on domain   1:    0.04872 elapsed seconds
+Timing for main: time 2019-11-26_22:03:36 on domain   1:    0.05385 elapsed seconds
+Timing for main: time 2019-11-26_22:04:48 on domain   1:    0.04924 elapsed seconds
+Timing for main: time 2019-11-26_22:06:00 on domain   1:    0.05283 elapsed seconds
+Timing for main: time 2019-11-26_22:07:12 on domain   1:    0.04897 elapsed seconds
+Timing for main: time 2019-11-26_22:08:24 on domain   1:    0.05277 elapsed seconds
+Timing for main: time 2019-11-26_22:09:36 on domain   1:    0.24738 elapsed seconds
+Timing for main: time 2019-11-26_22:10:48 on domain   1:    0.05136 elapsed seconds
+Timing for main: time 2019-11-26_22:12:00 on domain   1:    0.04892 elapsed seconds
+Timing for main: time 2019-11-26_22:13:12 on domain   1:    0.04965 elapsed seconds
+Timing for main: time 2019-11-26_22:14:24 on domain   1:    0.05131 elapsed seconds
+Timing for main: time 2019-11-26_22:15:36 on domain   1:    0.04888 elapsed seconds
+Timing for main: time 2019-11-26_22:16:48 on domain   1:    0.05253 elapsed seconds
+Timing for main: time 2019-11-26_22:18:00 on domain   1:    0.05078 elapsed seconds
+Timing for main: time 2019-11-26_22:19:12 on domain   1:    0.05141 elapsed seconds
+Timing for main: time 2019-11-26_22:20:24 on domain   1:    0.04996 elapsed seconds
+Timing for main: time 2019-11-26_22:21:36 on domain   1:    0.05233 elapsed seconds
+Timing for main: time 2019-11-26_22:22:48 on domain   1:    0.05258 elapsed seconds
+Timing for main: time 2019-11-26_22:24:00 on domain   1:    0.05424 elapsed seconds
+Timing for main: time 2019-11-26_22:25:12 on domain   1:    0.24772 elapsed seconds
+Timing for main: time 2019-11-26_22:26:24 on domain   1:    0.05425 elapsed seconds
+Timing for main: time 2019-11-26_22:27:36 on domain   1:    0.04687 elapsed seconds
+Timing for main: time 2019-11-26_22:28:48 on domain   1:    0.05198 elapsed seconds
+Timing for main: time 2019-11-26_22:30:00 on domain   1:    0.04692 elapsed seconds
+Timing for main: time 2019-11-26_22:31:12 on domain   1:    0.05004 elapsed seconds
+Timing for main: time 2019-11-26_22:32:24 on domain   1:    0.05073 elapsed seconds
+Timing for main: time 2019-11-26_22:33:36 on domain   1:    0.04930 elapsed seconds
+Timing for main: time 2019-11-26_22:34:48 on domain   1:    0.05277 elapsed seconds
+Timing for main: time 2019-11-26_22:36:00 on domain   1:    0.05005 elapsed seconds
+Timing for main: time 2019-11-26_22:37:12 on domain   1:    0.05115 elapsed seconds
+Timing for main: time 2019-11-26_22:38:24 on domain   1:    0.04996 elapsed seconds
+Timing for main: time 2019-11-26_22:39:36 on domain   1:    0.05153 elapsed seconds
+Timing for main: time 2019-11-26_22:40:48 on domain   1:    0.24781 elapsed seconds
+Timing for main: time 2019-11-26_22:42:00 on domain   1:    0.05411 elapsed seconds
+Timing for main: time 2019-11-26_22:43:12 on domain   1:    0.04702 elapsed seconds
+Timing for main: time 2019-11-26_22:44:24 on domain   1:    0.05183 elapsed seconds
+Timing for main: time 2019-11-26_22:45:36 on domain   1:    0.04794 elapsed seconds
+Timing for main: time 2019-11-26_22:46:48 on domain   1:    0.05317 elapsed seconds
+Timing for main: time 2019-11-26_22:48:00 on domain   1:    0.04916 elapsed seconds
+Timing for main: time 2019-11-26_22:49:12 on domain   1:    0.05187 elapsed seconds
+Timing for main: time 2019-11-26_22:50:24 on domain   1:    0.05241 elapsed seconds
+Timing for main: time 2019-11-26_22:51:36 on domain   1:    0.05117 elapsed seconds
+Timing for main: time 2019-11-26_22:52:48 on domain   1:    0.05110 elapsed seconds
+Timing for main: time 2019-11-26_22:54:00 on domain   1:    0.05192 elapsed seconds
+Timing for main: time 2019-11-26_22:55:12 on domain   1:    0.05063 elapsed seconds
+Timing for main: time 2019-11-26_22:56:24 on domain   1:    0.24828 elapsed seconds
+Timing for main: time 2019-11-26_22:57:36 on domain   1:    0.05539 elapsed seconds
+Timing for main: time 2019-11-26_22:58:48 on domain   1:    0.04590 elapsed seconds
+Timing for main: time 2019-11-26_23:00:00 on domain   1:    0.05625 elapsed seconds
+Timing for Writing wrfout_d01_2019-11-26_23:00:00 for domain        1:    1.29403 elapsed seconds
+Timing for Writing restart for domain        1:    5.66884 elapsed seconds
+Timing for main: time 2019-11-26_23:01:12 on domain   1:    7.01174 elapsed seconds
+Timing for main: time 2019-11-26_23:02:24 on domain   1:    0.05105 elapsed seconds
+Timing for main: time 2019-11-26_23:03:36 on domain   1:    0.04890 elapsed seconds
+Timing for main: time 2019-11-26_23:04:48 on domain   1:    0.04925 elapsed seconds
+Timing for main: time 2019-11-26_23:06:00 on domain   1:    0.05079 elapsed seconds
+Timing for main: time 2019-11-26_23:07:12 on domain   1:    0.04904 elapsed seconds
+Timing for main: time 2019-11-26_23:08:24 on domain   1:    0.05032 elapsed seconds
+Timing for main: time 2019-11-26_23:09:36 on domain   1:    0.04995 elapsed seconds
+Timing for main: time 2019-11-26_23:10:48 on domain   1:    0.05215 elapsed seconds
+Timing for main: time 2019-11-26_23:12:00 on domain   1:    0.24801 elapsed seconds
+Timing for main: time 2019-11-26_23:13:12 on domain   1:    0.05467 elapsed seconds
+Timing for main: time 2019-11-26_23:14:24 on domain   1:    0.04746 elapsed seconds
+Timing for main: time 2019-11-26_23:15:36 on domain   1:    0.05092 elapsed seconds
+Timing for main: time 2019-11-26_23:16:48 on domain   1:    0.05027 elapsed seconds
+Timing for main: time 2019-11-26_23:18:00 on domain   1:    0.05175 elapsed seconds
+Timing for main: time 2019-11-26_23:19:12 on domain   1:    0.04968 elapsed seconds
+Timing for main: time 2019-11-26_23:20:24 on domain   1:    0.04813 elapsed seconds
+Timing for main: time 2019-11-26_23:21:36 on domain   1:    0.05393 elapsed seconds
+Timing for main: time 2019-11-26_23:22:48 on domain   1:    0.05063 elapsed seconds
+Timing for main: time 2019-11-26_23:24:00 on domain   1:    0.05366 elapsed seconds
+Timing for main: time 2019-11-26_23:25:12 on domain   1:    0.04958 elapsed seconds
+Timing for main: time 2019-11-26_23:26:24 on domain   1:    0.05294 elapsed seconds
+Timing for main: time 2019-11-26_23:27:36 on domain   1:    0.24709 elapsed seconds
+Timing for main: time 2019-11-26_23:28:48 on domain   1:    0.05301 elapsed seconds
+Timing for main: time 2019-11-26_23:30:00 on domain   1:    0.04761 elapsed seconds
+Timing for main: time 2019-11-26_23:31:12 on domain   1:    0.05134 elapsed seconds
+Timing for main: time 2019-11-26_23:32:24 on domain   1:    0.04850 elapsed seconds
+Timing for main: time 2019-11-26_23:33:36 on domain   1:    0.05128 elapsed seconds
+Timing for main: time 2019-11-26_23:34:48 on domain   1:    0.05431 elapsed seconds
+Timing for main: time 2019-11-26_23:36:00 on domain   1:    0.05326 elapsed seconds
+Timing for main: time 2019-11-26_23:37:12 on domain   1:    0.04843 elapsed seconds
+Timing for main: time 2019-11-26_23:38:24 on domain   1:    0.05170 elapsed seconds
+Timing for main: time 2019-11-26_23:39:36 on domain   1:    0.04958 elapsed seconds
+Timing for main: time 2019-11-26_23:40:48 on domain   1:    0.04962 elapsed seconds
+Timing for main: time 2019-11-26_23:42:00 on domain   1:    0.05237 elapsed seconds
+Timing for main: time 2019-11-26_23:43:12 on domain   1:    0.24774 elapsed seconds
+Timing for main: time 2019-11-26_23:44:24 on domain   1:    0.05279 elapsed seconds
+Timing for main: time 2019-11-26_23:45:36 on domain   1:    0.05070 elapsed seconds
+Timing for main: time 2019-11-26_23:46:48 on domain   1:    0.05417 elapsed seconds
+Timing for main: time 2019-11-26_23:48:00 on domain   1:    0.04996 elapsed seconds
+Timing for main: time 2019-11-26_23:49:12 on domain   1:    0.05192 elapsed seconds
+Timing for main: time 2019-11-26_23:50:24 on domain   1:    0.04973 elapsed seconds
+Timing for main: time 2019-11-26_23:51:36 on domain   1:    0.05144 elapsed seconds
+Timing for main: time 2019-11-26_23:52:48 on domain   1:    0.04760 elapsed seconds
+Timing for main: time 2019-11-26_23:54:00 on domain   1:    0.05407 elapsed seconds
+Timing for main: time 2019-11-26_23:55:12 on domain   1:    0.04795 elapsed seconds
+Timing for main: time 2019-11-26_23:56:24 on domain   1:    0.05031 elapsed seconds
+Timing for main: time 2019-11-26_23:57:36 on domain   1:    0.05030 elapsed seconds
+Timing for main: time 2019-11-26_23:58:48 on domain   1:    0.24778 elapsed seconds
+Timing for main: time 2019-11-27_00:00:00 on domain   1:    0.05023 elapsed seconds
+Timing for Writing wrfout_d01_2019-11-27_00:00:00 for domain        1:    1.26812 elapsed seconds
+wrf: SUCCESS COMPLETE WRF
