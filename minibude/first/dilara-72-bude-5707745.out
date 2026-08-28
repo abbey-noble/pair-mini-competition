@@ -1,0 +1,20 @@
+### host: x3009c0s11b3n0
+### date: Wed Aug 26 02:47:29 PM UTC 2026
+### modules:
+
+Currently Loaded Modules:
+  1) brics/userenv/2.7   5) craype-network-ofi   9) cray-libsci/26.03.0
+  2) brics/default/1.0   6) PrgEnv-gnu/8.7.0    10) craype-arm-grace
+  3) craype/2.7.36       7) gcc-native/14
+  4) libfabric/2.3.1     8) cray-mpich/9.1.0
+
+ 
+
+
+=== threads=72 ===
+# (ppwi=1,wgsize=1,valid=1)
+# (ppwi=2,wgsize=1,valid=1)
+# (ppwi=4,wgsize=1,valid=1)
+# (ppwi=8,wgsize=1,valid=1)
+# (ppwi=16,wgsize=1,valid=1)
+[2026-08-26T15:32:31.014] error: *** JOB 5707745 ON x3009c0s11b3n0 CANCELLED AT 2026-08-26T15:32:31 DUE TO TIME LIMIT ***
