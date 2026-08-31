@@ -81,19 +81,21 @@ Performance is mostly dependent on how k-points, FFT grids, and diagonalisation 
 - `nd`: Distributes diagonalisation matrices across a square grid of MPI ranks.
 
 ### Best result
-614.01s with:
-- 96 MPI ranks total (48 per node/pool because of 2 k-point pools)
+
+614.01 s with:
+
+- 48 MPI ranks per node (96 total)
 - 3 OpenMP threads per rank
-- 2 k-point pools
-- Default Davidson
+- 2 k-point pools (48 ranks per pool)
+- Default Davidson workspace
 
 ### Configurations tested
 
-- 72 MPI ranks, 4 threads, 1 pool: 717.67 s
-- 96 MPI ranks, 3 threads, 2 pools: 614.01 s
-- 96 MPI ranks, 3 threads, 4 pools: out of memory
-- 128 MPI ranks, 2 threads, 4 pools: out of memory
-- 96 MPI ranks, 3 threads, 2 pools, diago_david_ndim=4: out of memory
+- 36 MPI ranks per node (72 total), 4 threads, 1 pool: 717.67 s
+- 48 MPI ranks per node (96 total), 3 threads, 2 pools: 614.01 s
+- 48 MPI ranks per node (96 total), 3 threads, 4 pools: out of memory
+- 64 MPI ranks per node (128 total), 2 threads, 4 pools: out of memory
+- 48 MPI ranks per node (96 total), 3 threads, 2 pools, `diago_david_ndim=4`: out of memory
 
 Be wary of OOMs!
 
