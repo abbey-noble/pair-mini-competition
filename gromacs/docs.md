@@ -78,17 +78,19 @@ Atoms are divided between PP ranks for short range bond calculations and PME ran
 - **Step count**: Increase step count to measure more stable performance (I only did 10000 steps, so I recommend trying this).
 
 ### Best Result
+
 299.737 ns/day with:
-- 144 MPI ranks per node
+
+- 144 MPI ranks per node (288 total)
 - 1 OpenMP thread per rank
-- 72 (automatically selected) PME ranks/216 PP ranks
+- 72 automatically selected PME ranks, 216 PP ranks
 - 6x6x6 domain-decomposition grid
 
 ### Configurations tested
 
-- 18 MPI ranks, 8 threads, 9–16 PME ranks: 220.141 ns/day
-- 24 MPI ranks, 6 threads, 12–18 PME ranks: 247.533 ns/day
-- 36 MPI ranks, 4 threads, 18–30 PME ranks: 263.340 ns/day
-- 48 MPI ranks, 3 threads, 24–36 PME ranks: 274.245 ns/day
-- 72 MPI ranks, 2 threads, 36–54 PME ranks: 286.885 ns/day
-- 144 MPI ranks, 1 thread, 72 auto-selected PME ranks: 299.737 ns/day
+- 18 MPI ranks per node (36 total), 8 threads, 9–16 PME ranks total: 220.141 ns/day
+- 24 MPI ranks per node (48 total), 6 threads, 12–18 PME ranks total: 247.533 ns/day
+- 36 MPI ranks per node (72 total), 4 threads, 18–30 PME ranks total: 263.340 ns/day
+- 48 MPI ranks per node (96 total), 3 threads, 24–36 PME ranks total: 274.245 ns/day
+- 72 MPI ranks per node (144 total), 2 threads, 36–54 PME ranks total: 286.885 ns/day
+- 144 MPI ranks per node (288 total), 1 thread, 72 automatically selected PME ranks total: 299.737 ns/day
