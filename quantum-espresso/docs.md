@@ -70,4 +70,20 @@ srun --cpu-bind=cores ../build/bin/pw.x -nk 1 -in grir443.in
 
 ## Optimisations
 
-Will publish once jobs exit queue!
+Atoms are divided between PP ranks for short range bond calculations and PME ranks for long range calculations which uses a distributed grid and FFTs.
+
+### Parameters to tune
+- **MPI ranks**: More ranks = more spatial domains: parallelises more work but requires more communication between those domains.
+- **OpenMP threads**: More threads = more work is shared within each MPI rank: reduces MPI communication but creates fewer spatial domains.
+- `-npme`: Sets the number of MPI ranks which are used for PME (speed up FFT work).
+- `-dlb`: Dynamic load balancing: changes the domain size at runtime to balance uneven work between PP ranks.
+- `-dd`: Changes the domain size. smaller, more domains = less calculation per rank, more parallelism, but more communication at the boundaries. larger, fewer domains = more calculation per rank, less MPI communication, but less parallelism. `-dd` is usually automatically set by how you tune `-dlb`.
+- **Step count**: Increase step count to measure more stable performance (I only did 10000 steps, so I recommend trying this).
+
+### Best Result
+
+**299.737 ns/day** with:
+- 144 MPI ranks per node
+- 1 OpenMP thread per rank
+- 72 (automatically selected) PME ranks/216 PP ranks
+- 6x6x6 domain-decomposition grid
