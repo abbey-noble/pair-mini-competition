@@ -43,5 +43,6 @@ export OMP_PLACES=cores
 export OMP_PROC_BIND=close
 
 srun --cpu-bind=cores ../bin/pw.x -nk 2 -nd 16 -in grir443.in
+```
 
 ## Best results
