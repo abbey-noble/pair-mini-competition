@@ -1,6 +1,6 @@
 # Quantum ESPRESSO
 
-## Week 2 results
+## Week 2 configurations tested
 
 BASELINE: 614s
 
@@ -10,15 +10,18 @@ BASELINE: 614s
 
 **-nd**: the shape of the matrix
 
-| --ntasks-per-node | --cpus-per-task | -nk | -nb | -nd | results (s) | memory (GB) |
-| ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 36 | 4 | 2 | -  | -  | 643 | 230.2 |
-| 24 | 6 | 2 | -  | -  | 665 | 226.7 |
-| 48 | 3 | 2 | 2  | -  | -   | -     |
-| 48 | 3 | 2 | 4  | -  | -   | -     |
-| 48 | 3 | 2 | -  | 4  | -   | -     |
-| 48 | 3 | 2 | -  | 16 | -   | -     |
+**-nt**: 
 
+| --ntasks-per-node | --cpus-per-task | -nk | -nb | -nd | -nt | runtime (s) | memory (GB) |
+| ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 36 | 4 | 2 | -  | -  | -  |643 | 230.2 |
+| 24 | 6 | 2 | -  | -  | -  | 665 | 226.7 |
+| 48 | 3 | 2 | 2  | -  | -  | -   | -     |
+| 48 | 3 | 2 | 4  | -  | -  | -   | -     |
+| 48 | 3 | 2 | -  | 4  | -  | -   | -     |
+| 48 | 3 | 2 | -  | 16 | -  | -   | -     |
+| 48 | 3 | 2 | -  | - | 2  | -   | -     |
+| 48 | 3 | 2 | -  | - | 4  | -   | -     |
 
 ## Run
 ```
@@ -40,3 +43,5 @@ export OMP_PLACES=cores
 export OMP_PROC_BIND=close
 
 srun --cpu-bind=cores ../bin/pw.x -nk 2 -nd 16 -in grir443.in
+
+## Best results
