@@ -8,9 +8,9 @@ BASELINE: 614s
 
 **-nb**: How many orbitals in each band group 
 
-**-nd**: the shape of the matrix
+**-nd**: The shape of the matrix
 
-**-nt**: 
+**-nt**: Splits the ranks in a pool into subgroups
 
 | --ntasks-per-node | --cpus-per-task | -nk | -nb | -nd | -nt | runtime (s) | memory (GB) |
 | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
