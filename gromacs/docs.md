@@ -4,10 +4,6 @@ BenchMEM simulates an 82000 atom membrane protein surrounded by water using `gmx
 
 **Goal**: maximise performance in ns/day for the benchMEM benchmark using two nodes
 
-**Metric**: `Performance:` simulated ns/day (higher is better)
-
-**Requirement**: all 10,000 steps complete
-
 ## Build
 
 **Dependencies:**
@@ -40,9 +36,11 @@ unzip benchmark/benchMEM.zip -d benchmark
 
 ## Run Baseline
 
-**Results**: 268.229 ns/day, 6.443 s, 0.644 ms/step
+268.229 ns/day with:
 
-This baseline uses two nodes, 72 MPI ranks per node, 2 OpenMP threads per rank, 36 auto-selected PME ranks.
+- 72 MPI ranks per node
+- 2 OpenMP threads per rank
+- 32 (auto) PME ranks
 
 Create `run-baseline/run.sh`:
 ```
@@ -69,7 +67,7 @@ srun --cpu-bind=cores ../build/bin/gmx_mpi mdrun -s ../benchmark/benchMEM.tpr -n
 ## Optimisations
 Atoms are divided between PP ranks for short range bond calculations and PME ranks for long range calculations which uses a distributed grid and FFTs.
 
-### Parameters to tune
+### Tuning
 - **MPI ranks**: More ranks = more spatial domains: parallelises more work but requires more communication between those domains.
 - **OpenMP threads**: More threads = more work is shared within each MPI rank: reduces MPI communication but creates fewer spatial domains.
 - `-npme`: Sets the number of MPI ranks which are used for PME (speed up FFT work).
