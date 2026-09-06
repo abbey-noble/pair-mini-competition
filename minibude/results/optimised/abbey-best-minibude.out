@@ -1,0 +1,4 @@
+# (ppwi=32,wgsize=1,valid=1)
+ppwi,wgsize,sum_ms,avg_ms,min_ms,max_ms,stddev_ms,interactions/s,gflops/s,gfinst/s
+32,1,11941.291,2985.323,2979.415,2993.181,5.694,156733400104.697,4752.041,3918.335
+# best: { min_ms: 2979.415, max_ms: 2993.181, sum_ms: 11941.291, avg_ms: 2985.323, ppwi: 32, wgsize: 1 }
