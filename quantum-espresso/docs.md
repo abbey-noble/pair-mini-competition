@@ -2,11 +2,7 @@
 
 GRIR443 runs one SCF iteration of a 443 atom system using `pw.x`.
 
-**Goal**: run GRIR443 as fast as possible using up to two nodes
-
-**Metric**: final PWSCF WALL time (lower is better)
-
-**Requirement**: run finishes with 'JOB DONE' and total energy is consistent
+**Goal**: run GRIR443 as fast as possible using up to two nodes (minimise PWSCF WALL time)
 
 ## Build
 
@@ -42,9 +38,11 @@ cp benchmarks/GRIR443/grir443.in benchmarks/GRIR443/C.pbe-paw_kj-x.UPF benchmark
 
 ## Run Baseline
 
-**Results**: 717.67 s, −179017.84902409 Ry
+717.67 s with:
 
-This baseline uses two nodes, 36 MPI ranks per node, 4 OpenMP threads per rank, 1 k-point pool.
+- 36 MPI ranks per node
+- 4 OpenMP threads per rank
+- 1 k-point pool
 
 Create `run-baseline/run.sh`:
 ```
@@ -70,11 +68,11 @@ srun --cpu-bind=cores ../build/bin/pw.x -nk 1 -in grir443.in
 
 ## Optimisations
 
-Performance is mostly dependent on how k-points, FFT grids, and diagonalisation gets distributed across MPI ranks and OpenMP threads.
+Consider how k-points, FFT grids, and diagonalisation gets distributed across MPI ranks and OpenMP threads.
 
-### Parameters to tune
-- MPI ranks: More ranks = more FFT work and plane-wave work parallelised, but requires more communication and duplicated process memory
-- OpenMP threads: More threads = more work is shared within each MPI rank: reduces MPI communication but only the threaded parts of QE actually benefit
+### Tuning
+- **MPI ranks**: More ranks = more FFT work and plane-wave work parallelised, but requires more communication and duplicated process memory
+- **OpenMP threads**: More threads = more work is shared within each MPI rank: reduces MPI communication but only the threaded parts of QE actually benefit
 - `-nk N`: Splits k-points between N pools, which are groups within MPI ranks. Pools process different k-points concurrently with little communication between them. Can increase memory usage.
 - `diago_david_ndim`: Sets the Davidson diagonalisation workspace size. Larger values may reduce iterations but require more memory.
 - `-ntg`: Divides ranks into FFT task groups.
