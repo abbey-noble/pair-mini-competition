@@ -1,0 +1,8 @@
+case,status,completed_timesteps_in_8_minutes,mean_seconds_per_timestep
+r36t4-p9x16,COMPLETE,600,0.103650
+r36t4-p16x9,COMPLETE,600,0.106347
+r36t4-auto,COMPLETE,600,0.106439
+r36t4-tiles8,COMPLETE,600,0.107039
+r48t3-auto,COMPLETE,600,0.110329
+r72t2-auto,COMPLETE,600,0.111872
+r144t1-auto,COMPLETE,600,0.119667
