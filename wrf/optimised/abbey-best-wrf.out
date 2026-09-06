@@ -1,0 +1,29 @@
+Timing for main: time 2019-11-26_23:31:12 on domain   1:    0.04743 elapsed seconds
+Timing for main: time 2019-11-26_23:32:24 on domain   1:    0.05037 elapsed seconds
+Timing for main: time 2019-11-26_23:33:36 on domain   1:    0.04907 elapsed seconds
+Timing for main: time 2019-11-26_23:34:48 on domain   1:    0.05008 elapsed seconds
+Timing for main: time 2019-11-26_23:36:00 on domain   1:    0.04850 elapsed seconds
+Timing for main: time 2019-11-26_23:37:12 on domain   1:    0.04845 elapsed seconds
+Timing for main: time 2019-11-26_23:38:24 on domain   1:    0.05672 elapsed seconds
+Timing for main: time 2019-11-26_23:39:36 on domain   1:    0.05033 elapsed seconds
+Timing for main: time 2019-11-26_23:40:48 on domain   1:    0.04859 elapsed seconds
+Timing for main: time 2019-11-26_23:42:00 on domain   1:    0.04872 elapsed seconds
+Timing for main: time 2019-11-26_23:43:12 on domain   1:    0.23522 elapsed seconds
+Timing for main: time 2019-11-26_23:44:24 on domain   1:    0.04895 elapsed seconds
+Timing for main: time 2019-11-26_23:45:36 on domain   1:    0.05080 elapsed seconds
+Timing for main: time 2019-11-26_23:46:48 on domain   1:    0.05052 elapsed seconds
+Timing for main: time 2019-11-26_23:48:00 on domain   1:    0.04889 elapsed seconds
+Timing for main: time 2019-11-26_23:49:12 on domain   1:    0.05032 elapsed seconds
+Timing for main: time 2019-11-26_23:50:24 on domain   1:    0.04827 elapsed seconds
+Timing for main: time 2019-11-26_23:51:36 on domain   1:    0.05045 elapsed seconds
+Timing for main: time 2019-11-26_23:52:48 on domain   1:    0.04624 elapsed seconds
+Timing for main: time 2019-11-26_23:54:00 on domain   1:    0.05098 elapsed seconds
+Timing for main: time 2019-11-26_23:55:12 on domain   1:    0.04515 elapsed seconds
+Timing for main: time 2019-11-26_23:56:24 on domain   1:    0.05082 elapsed seconds
+Timing for main: time 2019-11-26_23:57:36 on domain   1:    0.04676 elapsed seconds
+Timing for main: time 2019-11-26_23:58:48 on domain   1:    0.23304 elapsed seconds
+Timing for main: time 2019-11-27_00:00:00 on domain   1:    0.04769 elapsed seconds
+ mediation_integrate.G        1256 DATASET=HISTORY
+ mediation_integrate.G        1257  grid%id            1  grid%oid            2
+Timing for Writing wrfout_d01_2019-11-27_00:00:00 for domain        1:    1.26716 elapsed seconds
+wrf: SUCCESS COMPLETE WRF
